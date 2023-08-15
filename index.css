@@ -49,6 +49,7 @@ main {
     color:white; /*color texto*/
     font-family: 'handjet', sans-serif;
     font-size: 36px;
+    text-decoration: none;
 }
 
 .folders:hover {
