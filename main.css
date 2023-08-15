@@ -28,25 +28,32 @@ main {
 }
 
 
-.logo{
-    width:10%;
+
+.logo {
+    width: 50%; /* Ajusta el tamaño de la imagen del encabezado */
+    max-width: 200px; /* Limita el tamaño máximo de la imagen */
 }
 
 /* Carpetas */
 
 
 .folders {
-    text-align: center;
-    width: 80vh;
+    width: 90%; /* Ajusta el ancho de las carpetas para adaptarse mejor */
+    max-width: 800px; /* Limita el ancho máximo de las carpetas */
     height: 80px;
-    margin-top:10px;
-    border-radius: 40px; /* Ajusta este valor para cambiar el grado de redondez */
-  }
+    margin-top: 10px;
+    display: flex; /*centrar verticalmente*/
+    align-items: center; /*centrar verticalmente*/
+    justify-content: center; /*centrar horizontalmente*/
+    border-radius: 40px;
+    color:white; /*color texto*/
+    font-family: 'handjet', sans-serif;
+    font-size: 36px;
+}
 
-/* Cambio de color en :hover */
 .folders:hover {
     transform: scale(1.05); /* Escalado suave */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Sombra más prominente */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Sombra */
 }
 
 /* Colores individuales generados */
@@ -60,11 +67,11 @@ main {
 
 /* Variables de colores individuales */
 :root {
-    --folder-color-1: green;
-    --folder-color-2: orange;
-    --folder-color-3: purple;
-    --folder-color-4: yellow;
-    --folder-color-5: blue;
-    --folder-color-6: red;
-    --folder-color-7: pink;
+    --folder-color-1: blue;
+    --folder-color-2: rgb(72, 81, 72);
+    --folder-color-3: rgb(151, 162, 4);
+    --folder-color-4: red;
+    --folder-color-5: purple;
+    --folder-color-6: orange;
+    --folder-color-7: rgb(0, 255, 4);
 }
