@@ -5,7 +5,14 @@ body {
     padding: 0;
 }
 
-header, footer {
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer{
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -14,6 +21,10 @@ header, footer {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -21,64 +32,40 @@ main {
     width:10%;
 }
 
+/* Carpetas */
 
 
-
-/* Estilos para la sección de subida */
-.upload-section {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-#fileInput {
-    display: none;
-}
-
-label[for="fileInput"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#uploadButton {
-    background-color: #28a745;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-/* Estilos para la visualización de carpetas y archivos (puedes personalizarlos según tu diseño) */
 .folders {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    text-align: center;
+    width: 80vh;
+    height: 80px;
+    margin-top:10px;
+    border-radius: 40px; /* Ajusta este valor para cambiar el grado de redondez */
+  }
+
+/* Cambio de color en :hover */
+.folders:hover {
+    transform: scale(1.05); /* Escalado suave */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Sombra más prominente */
 }
 
-.folder {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
+/* Colores individuales generados */
+.folders:nth-child(1) { background-color: var(--folder-color-1); }
+.folders:nth-child(2) { background-color: var(--folder-color-2); }
+.folders:nth-child(3) { background-color: var(--folder-color-3); }
+.folders:nth-child(4) { background-color: var(--folder-color-4); }
+.folders:nth-child(5) { background-color: var(--folder-color-5); }
+.folders:nth-child(6) { background-color: var(--folder-color-6); }
+.folders:nth-child(7) { background-color: var(--folder-color-7); }
+
+/* Variables de colores individuales */
+:root {
+    --folder-color-1: green;
+    --folder-color-2: orange;
+    --folder-color-3: purple;
+    --folder-color-4: yellow;
+    --folder-color-5: blue;
+    --folder-color-6: red;
+    --folder-color-7: pink;
 }
 
-.file {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.file-preview {
-    max-width: 100px;
-    max-height: 100px;
-    margin-bottom: 10px;
-}
-
-/* Otros estilos */
