@@ -11,15 +11,30 @@
         <h1>Sistemas</h1>
     </header>
     <main>
+        <div class="password-section">
+            <h2>Contraseña</h2>
+            <input type="password" id="passwordInput" placeholder="Ingrese la contraseña">
+            <button id="passwordSubmit">Enviar</button>
+        </div>   
+        <div id="errorDialog" class="dialog">
+            <p>Contraseña incorrecta. Intente de nuevo.</p>
+        </div>     
         <div class="upload-section">
             <h2>Subir Documento</h2>
             <input type="file" accept=".py, .docx, .pdf" />
-            <button>Subir</button>
         </div>
         <div class="documents-section">
             <h2>Documentos Subidos</h2>
             <ul class="document-list">
             </ul>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Guardar Documento</h2>
+                <input type="text" id="fileNameInput" placeholder="Nombre del documento">
+                <button id="saveButton">Guardar</button>
+            </div>
         </div>
         <script src="./uploadDoc.js"></script>
     </main>
